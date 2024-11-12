@@ -1,0 +1,17 @@
+{
+    "name": "arcrissilang/backend",
+    "autoload": {
+        "psr-4": {
+            "Arcrissilang\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "apnarcris",
+            "email": "arcris.silang@apntelecom.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.10"
+    }
+}
