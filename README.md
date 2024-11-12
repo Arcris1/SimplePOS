@@ -23,7 +23,7 @@ Ensure you have the following installed on your development machine:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/pos_app.git
+    git clone https://github.com/yourusername/SimplePOS.git
     ```
 2. Navigate to the project directory:
     ```sh
@@ -67,7 +67,8 @@ To set up the backend for this project, follow these steps:
 Don't forget to update the API URL in `constants.dart` to point to your login API. This is crucial for the application to communicate with the backend.
 
 ```dart
-const String apiUrl = 'https://yourapiurl.com/api';
+  static const String registerUri = 'http://127.0.0.1:2000/api.php?action=register';
+  static const String loginUri = 'http:/127.0.0.1:2000/api.php?action=login';
 ```
 
 ## Resources
