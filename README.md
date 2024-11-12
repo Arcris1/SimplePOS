@@ -60,6 +60,24 @@ To set up the backend for this project, follow these steps:
     php -v
     ```
 
+### Database Setup
+
+The name of the database is `cris_pos`. Use the following SQL command to create the `Users` table:
+
+```sql
+CREATE TABLE `Users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `firstName` varchar(100) NOT NULL,
+  `lastName` varchar(100) NOT NULL,
+  `contactNumber` varchar(20) DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+```
+
 ## Configuration
 
 ### API URL
